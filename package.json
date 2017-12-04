@@ -1,0 +1,23 @@
+{
+  "name": "Fraktl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ck2germany/Fraktl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ck2germany/Fraktl/issues"
+  },
+  "homepage": "https://github.com/ck2germany/Fraktl#readme",
+  "dependencies": {
+    "webpack": "^3.10.0"
+  }
+}
