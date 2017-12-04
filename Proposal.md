@@ -29,6 +29,9 @@ Fraktl will be a single page app with the following components:
 - [ ] Left control panel with buttons and input fields
 - [ ] Main Display section with the rendered image
 
+[Main](https://raw.githubusercontent.com/ck2germany/Fraktl/master/Wireframes/Frktl_Main.png)
+[Modal](https://raw.githubusercontent.com/ck2germany/Fraktl/master/Wireframes/Frktl_Modal.png)
+
 ## Technologies
 - Vanilla JS
 - Canvas for rendering
