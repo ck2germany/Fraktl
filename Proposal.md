@@ -19,7 +19,7 @@ In Fraktl, users will be able to:
 - [ ] Choose various zoom presets to view special patterns
 - [ ] Interact with controls to create custom patterns
 
-[Wiki](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Mandel_zoom_00_mandelbrot_set.jpg/320px-Mandel_zoom_00_mandelbrot_set.jpg)
+![Wiki](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Mandel_zoom_00_mandelbrot_set.jpg/320px-Mandel_zoom_00_mandelbrot_set.jpg)
 
 This project will also include: 
 - [ ] An about modal detailing the mathematical concept of a fractal
@@ -31,8 +31,9 @@ Fraktl will be a single page app with the following components:
 - [ ] Left control panel with buttons and input fields
 - [ ] Main Display section with the rendered image
 
-[Main](https://raw.githubusercontent.com/ck2germany/Fraktl/master/Wireframes/Frktl_Main.png)
-[Modal](https://raw.githubusercontent.com/ck2germany/Fraktl/master/Wireframes/Frktl_Modal.png)
+![Main](https://raw.githubusercontent.com/ck2germany/Fraktl/master/Wireframes/Frktl_Main.png)
+
+![Modal](https://raw.githubusercontent.com/ck2germany/Fraktl/master/Wireframes/Frktl_Modal.png)
 
 ## Technologies
 - Vanilla JS
