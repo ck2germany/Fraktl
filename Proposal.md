@@ -19,6 +19,8 @@ In Fraktl, users will be able to:
 - [ ] Choose various zoom presets to view special patterns
 - [ ] Interact with controls to create custom patterns
 
+[Wiki](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Mandel_zoom_00_mandelbrot_set.jpg/320px-Mandel_zoom_00_mandelbrot_set.jpg)
+
 This project will also include: 
 - [ ] An about modal detailing the mathematical concept of a fractal
 - [ ] A "How do I" modal explaining the controls
@@ -62,7 +64,7 @@ Fraktl will be a single page app with the following components:
 - write text for modal screen
 - final css optimization
 
-##Bonus Features
+## Bonus Features
 - Selection rectangle as input for next zoom view
 - Additional pattern equations such as Burning Ship, Koch Curve, Sierpinski Triangle
 - HTML ColorPicker for custom palette creation
