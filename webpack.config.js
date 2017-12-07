@@ -1,7 +1,7 @@
 var path = require('path');
 
 module.exports = {
-  entry: './fraktl.jsx',
+  entry: './lib/fraktl.js',
   output: {
     filename: './bundle.js',
   },

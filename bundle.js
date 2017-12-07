@@ -78,67 +78,32 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 var scene = new THREE.Scene();
 
-var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100);
+var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
 var renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth / 2, window.innerHeight / 2);
+renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
-var geometry = new THREE.BoxGeometry(1, 1, 1);
-var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-var cube = new THREE.Mesh(geometry, material);
+var gBox = new THREE.BoxGeometry(4, 4, 4);
+var material = new THREE.MeshBasicMaterial({ color: 0x00ffff });
+var cube = new THREE.Mesh(gBox, material);
 scene.add(cube);
 
-camera.position.z = 5;
+camera.position.z = 75;
 
-var starsGeometry = new THREE.Geometry();
+var cylGeo = new THREE.CylinderGeometry(5, 5, 20, 32);
+var cylinder = new THREE.Mesh(cylGeo, material);
+scene.add(cylinder);
 
-for (var i = 0; i < 10000; i++) {
-
-  var star = new THREE.Vector3();
-  star.x = THREE.Math.randFloatSpread(2000);
-  star.y = THREE.Math.randFloatSpread(2000);
-  star.z = THREE.Math.randFloatSpread(2000);
-
-  starsGeometry.vertices.push(star);
-}
-
-var starsMaterial = new THREE.PointsMaterial({ color: 0x888888 });
-
-var starField = new THREE.Points(starsGeometry, starsMaterial);
-
-scene.add(starField);
-
-var animate = function animate() {
+function animate() {
   requestAnimationFrame(animate);
-
-  cube.rotation.x += 0.1;
-  cube.rotation.y += 0.1;
-
+  cylinder.rotation.x += 0.07;
+  cylinder.rotation.y += 0.05;
+  cylinder.rotation.z += 0.05;
   renderer.render(scene, camera);
-};
-
+}
 animate();
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   const mycanvas = document.getElementById("it");
-//   //instead of a 2d context, we choose webgl here
-//   if (!mycanvas) {
-//     console.log("no element");
-//   }
-//   const context = mycanvas.getContext("webgl");
-//
-//   //alert for users who aren't supported
-//   if (!context) {
-//     alert("Unable to initialize WebGL, most commonly a browser upgrade is needed");
-//   }
-//   mycanvas.width = 300;
-//   mycanvas.height = 300;
-//   //draw a black box just to see
-//   context.clearColor(0.0, 0.0, 0.0, 1.0);
-//   context.clear(context.COLOR_BUFFER_BIT);
-//
-// });
+renderer.render(scene, camera);
 
 /***/ }),
 /* 1 */
