@@ -1,0 +1,53 @@
+
+
+1. get canvas element from html that we will render to
+2. get context of webgl canvas.getContext("webgl", {});
+  - default options such as alpha(t), depth(t), antialias(t), preserveDrawingBuffer(f)
+3. write code for vertex shader source and fragment shader source
+  - GLSL language, in javascript, you pass it in using strings
+  - built in data types and functions for working with matrices
+  - each has its own main() function
+  - each compiled separately and then linked together
+4. primitive types you can draw
+  - points
+  - line segments
+  - triangles
+5. attribute variables (attributes) - can vary for each vertex
+  - coordinates
+  - color
+  - attributes are only passed into the vertex shader
+  - a gl_Position is passed back out to the fragment shader
+6. uniform variables (uniforms)  - remains the same for each vertex
+  - can be passed into vertex or fragment shader
+7. vertex shader
+8. fragment shader
+
+
+
+  // vertex shader program
+  // it has to be a string, written in GLSL
+  const vsSource = `
+    attribute vec4 aVertexPosition;
+    uniform mat4 uModelViewMatrix;
+    uniform mat4 uProjectionMatrix;
+    void main() {
+      gl_Position = uProjectionMatrix * uModelViewMatrix * aVertexPosition;
+    }
+  `;
+
+  // creates a fragment shader program
+  // it is also a GLSL string
+  const fsSource = `
+  void main() {
+    gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);
+  }
+`;
+
+  //create a shader initialization
+  function initShaderProgram(gl, vsSource, fsSource) {
+  // create new shaders by loading their sources
+  // create a program
+  // link the created shaders in
+  }
+
+}
