@@ -28,7 +28,7 @@ My initial goal was to render fractals to the screen that a user could interacti
 - many many examples on how to do complex operations but with simple vertices, nothing to help guide on create an image by setting each color point by point
 - during resume peer review in the afternoon, sent a link to an online book on graphics and webgl, started reading
 
-### Thurday
+### Thursday
 - made it through most of the book, started to realize that this was a complicated procedure, but determined to push on.
 - 3D coordinates, transforms
 - how objects use individual coord systems that are translated into the whole
